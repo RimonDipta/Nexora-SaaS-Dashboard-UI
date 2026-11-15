@@ -1,0 +1,95 @@
+/* eslint-disable react-refresh/only-export-components */
+// Named icon exports backed by the Figma "DS / Icons" set (see ./paths.js).
+// Names follow the components the pages already use, each mapped to the matching Figma glyph.
+import Icon from '../components/Icon';
+
+const make = (figmaName) => {
+  function FigmaIcon({ size = 16, color, className, style, fill, title }) {
+    return <Icon name={figmaName} size={size} color={color} className={className} style={fill && fill !== 'none' ? { ...style, fill } : style} title={title} />;
+  }
+  FigmaIcon.displayName = `Icon(${figmaName})`;
+  return FigmaIcon;
+};
+
+export const LayoutDashboard = make('overview');
+export const SquareCheck = make('my-tasks');
+export const Inbox = make('inbox');
+export const Calendar = make('calendar');
+export const Folder = make('projects');
+export const FolderPlus = make('projects');
+export const Users = make('teams');
+export const User = make('members');
+export const UserRound = make('members');
+export const UserPlus = make('members');
+export const Target = make('goals');
+export const ChartColumn = make('reports');
+export const Activity = make('workload');
+export const Clock = make('time');
+export const Settings = make('settings');
+export const Settings2 = make('settings');
+export const Plug = make('integrations');
+export const CreditCard = make('billing');
+export const Search = make('search');
+export const Plus = make('plus');
+export const Bell = make('bell');
+export const CircleHelp = make('help');
+export const ChevronDown = make('chevron-down');
+export const ChevronUp = make('chevron-up');
+export const ChevronRight = make('chevron-right');
+export const ChevronLeft = make('chevron-left');
+export const ChevronsUpDown = make('chevrons-up-down');
+export const MoreHorizontal = make('more');
+export const MoreVertical = make('kebab');
+export const ListFilter = make('filter');
+export const ArrowUpDown = make('sort');
+export const LayoutGrid = make('grid');
+export const List = make('list');
+export const Columns3 = make('board');
+export const AlignLeft = make('timeline');
+export const GanttChart = make('timeline');
+export const MessageSquare = make('comment');
+export const Paperclip = make('attachment');
+export const Flag = make('flag');
+export const X = make('x');
+export const Check = make('check');
+export const Minus = make('minus');
+export const ArrowUpRight = make('arrow-up-right');
+export const ArrowDownRight = make('arrow-down-right');
+export const ArrowRight = make('arrow-right');
+export const ArrowRightLeft = make('arrow-right');
+export const CornerDownLeft = make('arrow-right');
+export const Sun = make('sun');
+export const Moon = make('moon');
+export const Monitor = make('monitor');
+export const Link2 = make('link');
+export const FileText = make('file');
+export const PanelLeft = make('sidebar');
+export const AtSign = make('at-sign');
+export const Star = make('star');
+export const Lock = make('lock');
+export const Shield = make('shield');
+export const Mail = make('mail');
+export const LogOut = make('logout');
+export const Diamond = make('milestone');
+export const CircleDot = make('circle-dot');
+export const GripVertical = make('drag');
+export const Eye = make('eye');
+export const Pencil = make('edit');
+export const Trash = make('trash');
+export const Menu = make('menu');
+export const Home = make('home');
+export const Zap = make('zap');
+export const Globe = make('globe');
+export const Compass = make('globe');
+export const Download = make('download');
+export const Upload = make('upload');
+export const Image = make('image');
+export const Info = make('info');
+export const CircleAlert = make('alert');
+export const CircleCheck = make('check-circle');
+export const Layers = make('layers');
+export const Command = make('command');
+export const Send = make('send');
+export const SendHorizontal = make('send');
+export const Smile = make('smile');
+export const ExternalLink = make('external');
